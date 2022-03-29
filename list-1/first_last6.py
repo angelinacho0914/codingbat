@@ -6,3 +6,12 @@ def first_last6(nums):
 print(first_last6([1, 2, 6]))
 print(first_last6([6, 1, 2, 3]))
 print(first_last6([13, 6, 1, 2, 3]))
+
+
+# My own version:
+def first_last6(nums):
+  for i in range(len(nums)):
+    if i == 0 or i == len(nums)-1:
+      if nums[i] == 6:
+        return True
+  return False
